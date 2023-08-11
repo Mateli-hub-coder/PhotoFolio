@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body {
+    background-color: black;
+}
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+    color: rgb(22, 228, 255);
+}
+.navbar-brand {
+    font-family: 'Caprasimo';
+}
+nav ul {
+    position: relative;
+    left: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white;
+}
+
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+.socials .bi:hover {
+    color: white;
+    transition: .2s;
+}
+#home .container-fluid {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    color: white;
+    text-transform: capitalize;
+}
+#home h1 .display-6 {
+    font-size: 24px;
+}
+#home h1 .display-4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Caprasimo';
+}
+#home .btn {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+#home .container {
+    height: 100vh;
+}
+#home .container .img-fluid {
+    border-radius: 20px;
+}
+hr {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    padding: 1.2px;
+    top: 20px;
+}
+footer .container {
+    color: white;
+}
+footer .container p {
+    font-size: 14px;
+}
+footer .container p span {
+    color: white;
+}
+@media screen and (max-width: 738px) {
+    #home .container-fluid {
+        height: 60vh;
+        line-height: .8em;
+    }
+    #home h1 {
+        position: relative;
+        top: 80px;
+        margin: 40px 0px;
+    }
+    #home .container {
+        height: 190vh;
+    }
+    #home .container .img-fluid {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    hr {
+        position: relative;
+        top: 80px;
+        width: 70%;
+        left: 60px;
+    }
+}
