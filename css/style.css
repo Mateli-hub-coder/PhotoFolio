@@ -24,6 +24,7 @@ nav ul {
     text-transform: uppercase;
     letter-spacing: .1em;
     color: white;
+    transition: .5s;
 }
 
 
@@ -58,6 +59,9 @@ nav ul {
     color: white;
     font-size: 14px;
     letter-spacing: .1em;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
 }
 #home .container {
     height: 100vh;
@@ -81,6 +85,50 @@ footer .container p {
 footer .container p span {
     color: white;
 }
+/* about section */
+.hero_container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_container .text-center h1 {
+    font-family: 'Caprasimo';
+}
+.hero_container .text-center p {
+    color: white;
+    position: relative;
+    left: 30%;
+}
+.hero_container .text-center .btn {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .1em;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+}
+
+.card {
+    width: 20rem;
+    height: 25.8rem;
+}
+.card-body {
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+}
+.card-body h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 10px;
+}
+.swiper-pagination {
+    position: relative;
+    top: 390px;
+    color: aliceblue;
+}
 @media screen and (max-width: 738px) {
     #home .container-fluid {
         height: 60vh;
@@ -103,5 +151,14 @@ footer .container p span {
         top: 80px;
         width: 70%;
         left: 60px;
+    }
+    footer .container {
+        position: relative;
+        top: 50px;
+    }
+    .hero_container .text-center p {
+        color: white;
+        position: relative;
+        left: 0px;
     }
 }
