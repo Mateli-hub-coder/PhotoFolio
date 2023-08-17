@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoFolio</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -26,10 +26,10 @@
                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Gallery
                     </a>
-                    <ul class="dropdown-menu  p-2 fw-bold" aria-labelledby="navbarDropdown" style="font-size: 14px;">
+                    <ul class="dropdown-menu p-2 fw-bold" aria-labelledby="navbarDropdown" style="font-size: 14px;">
                       <li><a class="dropdown-item" href="nature.html">Nature</a></li>
                       <li><a class="dropdown-item" href="travel.html">Travel</a></li>
                       <li><a class="dropdown-item" href="people.html">People</a></li>
@@ -42,7 +42,7 @@
                     <a class="nav-link" href="services.html">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
                 <div class="socials align-items-end">
@@ -59,66 +59,48 @@
         <section class="pt-5 hero_container w-100">
             <div class="text-center justify-content-center d-block col-md-4 pt-5 w-100">
                 <h1 class="pt-5">
-                    <div class="display-3 text-white">CONTACT</div>
+                    <div class="display-3 text-white">Travel Images</div>
                 </h1>
                 <p class="mx-5 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati saepe blanditiis, deleniti voluptatum nostrum, laboriosam ipsa error cum consequuntur nisi temporibus corporis voluptate fuga cumque.</p>
+                <a href="contact.html">
+                    <button class="btn btn-info fw-bolder">Available for hire</button>
+                </a>
             </div>
         </section>
-        <section class="pt-5">
-            <div class="container pt-5">
-                <div class="grid d-md-flex d-sm-block justify-content-center text-center">
-                    <div class="col-lg-3 d-flex">
-                        <i class="bi bi-geo-alt text-success bg-dark rounded-circle fw-bolder fs-5 p-2 icon" style="width: 44px; height: 44px;"></i>
-                        <div class="d-block text-md-start mx-3">
-                        <h3 class="text-capitalize fs-5 fw-bolder text-secondary">Location:</h3>
-                        <p class="text-capitalize text-white">avenue street,Nairobi</p>
-                        </div>
+        <section class="pt-5 w-100 grid_section">
+            <div class="container text-center pt-5">
+                <div class="row pt-3 g-3">
+                    <div class="col-md-4">
+                        <img class="img-fluid borders" src="../images/img1.jpg" alt="">
+                     </div>
+                     <div class="col-md-4">
+                        <img class="img-fluid borders" src="../images/img2.jpg" alt="">
+                     </div>
+                     <div class="col-md-4">
+                       <img class="img-fluid borders" src="../images/img3.jpg" alt="">
+                     </div>
+                     <div class="col-md-4">
+                       <img class="img-fluid borders" src="../images/img4.jpg" alt="">
                     </div>
-                    <div class="col-lg-3 d-flex">
-                        <i class="bi bi-envelope text-success bg-dark rounded-circle fw-bolder fs-5 p-2 icon" style="width: 44px; height: 44px;"></i>
-                        <div class="d-block text-md-start mx-3">
-                        <h3 class="text-capitalize fs-5 fw-bolder text-secondary">Email:</h3>
-                        <p class="text-white">info@example.com</p>
-                        </div>
+                    <div class="col-md-4">
+                       <img class="img-fluid borders" src="../images/img5.jpg" alt="">
                     </div>
-                    <div class="col-lg-3 d-flex">
-                        <i class="bi bi-phone text-success bg-dark rounded-circle fw-bolder fs-5 p-2 icon" style="width: 44px; height: 44px;"></i>
-                        <div class="d-block text-md-start mx-3">
-                        <h3 class="text-capitalize fs-5 fw-bolder text-secondary">Call:</h3>
-                        <p class="text-capitalize text-white">+254 115 554 857</p>
-                        </div>
+                    <div class="col-md-4">
+                      <img class="img-fluid borders" src="../images/img6.jpg" alt="">
                     </div>
                 </div>
-                <form class="row g-3">
-                    <div class="col-md-6">
-                      <input type="text" class="form-control bg-dark border border-0" id="Name" placeholder="Your name" required>
-                    </div>
-                    <div class="col-md-6">
-                      <input type="email" class="form-control bg-dark border border-0" id="Email" placeholder="Your Email" required>
-                    </div>
-                    <div class="col-12">
-                      <input type="text" class="form-control bg-dark border border-0" id="text" placeholder="subject" required>
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control bg-dark border border-0" aria-label="With textarea" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="col-12 d-flex align-items-center justify-content-center text-center">
-                        <button type="submit" class="btn btn-info text-center text-white text-capitalize fw-bold border border-0" style="padding: 10px 50px; font-size: 16px">Send message</button>
-                      </div>
-                </form>
-            </div>
+              </div>
         </section>
     </main>
     <footer>
         <hr class="text-muted lead">
          <div class="container pt-5">
             <div class="text-center d-block align-items-center">
-               <p class="text-center align-items-center fw-normal text-secondary">
-                <i class="bi bi-c-circle "></i> Copyright <span class="fw-bold ">PhotoPholio</span>.All Rights Reserved</p> <br>
+               <p class="text-center align-items-center fw-normal text-secondary"><i class="bi bi-c-circle "></i> Copyright <span class="fw-bold ">PhotoPholio</span>.All Rights Reserved</p> <br>
               <p style="position: relative; top: -20px;">Designed By <span class="text-warning text-uppercase">Mateli Boniface</span></p>
             </div>
          </div>
-    </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
